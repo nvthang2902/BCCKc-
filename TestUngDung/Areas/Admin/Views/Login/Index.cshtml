@@ -1,0 +1,76 @@
+﻿@model TestUngDung.Areas.Admin.Models.LoginModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hello</title>
+
+    <!-- Core CSS - Include with every page -->
+    <link href="~/Assets/admin/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Assets/admin/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- SB Admin CSS - Include with every page -->
+    <link href="~/Assets/admin/css/sb-admin.css" rel="stylesheet">
+    <style>
+
+
+        .text-danger {
+            border-color: #953b39;
+            color: #fff;
+            background-color: #c26565;
+            text-shadow: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="login-panel panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Đăng nhập vào hệ thống</h3>
+                    </div>
+                    <div class="panel-body">
+                        @using (Html.BeginForm("Login", "Login", FormMethod.Post))
+                        {
+                            @Html.AntiForgeryToken();
+                            @Html.ValidationSummary(false, "", new { @class = "text-danger" });
+                            <fieldset>
+                                <div class="form-group">
+                                    @Html.TextBoxFor(model => model.UserName, new { @class = "form-control", @placeholder = "Nhập tài khoản", @type = "text" })
+                                    @*<input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>*@
+                                </div>
+                                <div class="form-group">
+                                    @Html.TextBoxFor(model => model.PassWord, new { @class = "form-control", @placeholder = "Nhập mật khẩu", @type = "password" })
+                                    @*<input class="form-control" placeholder="Password" name="password" type="password" value="">*@
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        @*@Html.CheckBoxFor(model=>model.RememberMe)Remember Me*@
+                                        <input name="remember" type="checkbox" value="Remember Me"><small>remember</small>
+                                    </label>
+                                </div>
+                                <!-- Change this to a button or input when using this as a form -->
+                                <button type="submit" class="btn btn-primary deep-purple btn-block ">Đăng Nhập</button>
+
+                            </fieldset>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Core Scripts - Include with every page -->
+    <script src="~/Assets/admin/js/jquery-1.10.2.js"></script>
+    <script src="~/Assets/admin/js/bootstrap.min.js"></script>
+    <script src="~/Assets/admin/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+
+    <!-- SB Admin Scripts - Include with every page -->
+    <script src="~/Assets/admin/js/sb-admin.js"></script>
+
+</body>

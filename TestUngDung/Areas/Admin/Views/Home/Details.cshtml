@@ -1,0 +1,93 @@
+﻿@model ModelEF.Model.Product
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<style>
+    .mf {
+        width: 90%;
+        
+    }
+
+    .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+        cursor: not-allowed;
+        margin-top: 5px;
+        width: 300px;
+        background-color: #eee;
+        opacity: 1.2;
+        color: #000;
+    }
+
+    dl {
+        background-color: #bab9b9;
+    }
+</style>
+
+<div class="mf">
+    <h3>Chi tiết sản phẩm</h3>
+    <dl class="dl-horizontal" style=" padding:10px 0 10px 10px;">
+        <dt>
+            @Html.LabelFor(model => model.IDProduct)
+        </dt>
+        <dd>
+            <input placeholder="@Html.DisplayFor(model => model.IDProduct)" disabled="" class="form-control">
+
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NameProduct)
+        </dt>
+
+        <dd>
+            <input placeholder="@Html.DisplayFor(model => model.NameProduct)" disabled="" class="form-control">
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UnitCost)
+        </dt>
+
+        <dd>
+            <input placeholder="@Html.DisplayFor(model => model.UnitCost)" disabled="" class="form-control">
+
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+
+        <dd>
+            <input placeholder="@Html.DisplayFor(model => model.Quantity)" disabled="" class="form-control">
+        </dd>
+
+        <dt>Image</dt>
+        <dd>
+            <img style="width:200px;height:200px; margin:10px; " src="~/Upload/images/@Model.Image" />
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            <input placeholder="@Html.DisplayFor(model => model.Description)" disabled="" class="form-control">
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DropDownListFor(modelItem => modelItem.Status, new[] { new SelectListItem { Text = "Còn Hàng", Value = "True" }, new SelectListItem { Text = "Hết Hàng", Value = "False" } }, new { @class = "form-control", @disabled = "disabled" })
+
+        </dd>
+
+    </dl>
+    <div style="">
+
+        <a href="@Url.Action("Index", "Home")" class="btn btn-danger">Quay Lại</a>
+        @*@Html.ActionLink("Back to List", "Index")*@
+    </div>
+</div>
+

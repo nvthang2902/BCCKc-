@@ -1,0 +1,16 @@
+C:\Users\OS\Documents\Visual Studio 2017\Code Snippets\Visual C#\NguyenVanThang\ModelEF\bin\Debug\ModelEF.dll.config
+C:\Users\OS\Documents\Visual Studio 2017\Code Snippets\Visual C#\NguyenVanThang\ModelEF\bin\Debug\ModelEF.dll
+C:\Users\OS\Documents\Visual Studio 2017\Code Snippets\Visual C#\NguyenVanThang\ModelEF\bin\Debug\ModelEF.pdb
+C:\Users\OS\Documents\Visual Studio 2017\Code Snippets\Visual C#\NguyenVanThang\ModelEF\bin\Debug\EntityFramework.dll
+C:\Users\OS\Documents\Visual Studio 2017\Code Snippets\Visual C#\NguyenVanThang\ModelEF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\OS\Documents\Visual Studio 2017\Code Snippets\Visual C#\NguyenVanThang\ModelEF\bin\Debug\PagedList.dll
+C:\Users\OS\Documents\Visual Studio 2017\Code Snippets\Visual C#\NguyenVanThang\ModelEF\bin\Debug\PagedList.Mvc.dll
+C:\Users\OS\Documents\Visual Studio 2017\Code Snippets\Visual C#\NguyenVanThang\ModelEF\bin\Debug\EntityFramework.xml
+C:\Users\OS\Documents\Visual Studio 2017\Code Snippets\Visual C#\NguyenVanThang\ModelEF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\OS\Documents\Visual Studio 2017\Code Snippets\Visual C#\NguyenVanThang\ModelEF\bin\Debug\PagedList.xml
+C:\Users\OS\Documents\Visual Studio 2017\Code Snippets\Visual C#\NguyenVanThang\ModelEF\bin\Debug\PagedList.Mvc.xml
+C:\Users\OS\Documents\Visual Studio 2017\Code Snippets\Visual C#\NguyenVanThang\ModelEF\obj\Debug\ModelEF.csprojAssemblyReference.cache
+C:\Users\OS\Documents\Visual Studio 2017\Code Snippets\Visual C#\NguyenVanThang\ModelEF\obj\Debug\ModelEF.csproj.CoreCompileInputs.cache
+C:\Users\OS\Documents\Visual Studio 2017\Code Snippets\Visual C#\NguyenVanThang\ModelEF\obj\Debug\ModelEF.csproj.CopyComplete
+C:\Users\OS\Documents\Visual Studio 2017\Code Snippets\Visual C#\NguyenVanThang\ModelEF\obj\Debug\ModelEF.dll
+C:\Users\OS\Documents\Visual Studio 2017\Code Snippets\Visual C#\NguyenVanThang\ModelEF\obj\Debug\ModelEF.pdb

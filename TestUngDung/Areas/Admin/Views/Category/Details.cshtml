@@ -1,0 +1,36 @@
+﻿@model ModelEF.Model.Category
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+@section header{
+    Chi Tiết Danh Mục
+    }
+
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NameCate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NameCate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    
+    <a href="@Url.Action("Edit",new { id = Model.IDCategory })" class="btn btn-primary">Sửa</a>
+    <a href="@Url.Action("Index", "Category")" class="btn btn-danger">Quay Lại</a>
+</p>

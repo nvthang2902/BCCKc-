@@ -1,0 +1,43 @@
+﻿@model IEnumerable<ModelEF.Model.Product>
+@{
+    ViewBag.Title = "HomePage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="title text-center">Features Items</h2>
+@foreach (var item in Model)
+{
+    <div class="col-sm-4">
+        <div class="product-image-wrapper">
+            <div class="single-products">
+                <div class="productinfo text-center">
+                    <img style="width:200px;height:200px; margin:10px; " src="~/Upload/images/@item.Image" />
+                    <h2>@Html.DisplayFor(model => item.UnitCost)0vnd</h2>
+                    <p>@Html.DisplayFor(model => item.NameProduct)</p>
+
+                </div>
+                <div class="product-overlay">
+                    <div class="overlay-content">
+                        <h2>Giá:@Html.DisplayFor(model => item.UnitCost)$</h2>
+                        <p>@Html.DisplayFor(model => item.NameProduct)</p>
+                        <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="choose">
+                <ul class="nav nav-pills nav-justified">
+                    
+                    <li><a href="@Url.Action("Details", "Home", new { id = item.IDProduct})"><i class="fa fa-plus-square"></i>Chi Tiết</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+}
+    <ul class="pagination">
+        <li class="active"><a href="">1</a></li>
+        <li><a href="">2</a></li>
+        <li><a href="">3</a></li>
+        <li><a href="">&raquo;</a></li>
+    </ul>
